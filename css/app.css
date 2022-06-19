@@ -1,0 +1,34 @@
+#Portada {
+    background-image: url("Banner.png");
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: white;
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 8px 0;
+    border-radius: 4px;
+    display: inline-block
+}
+
+.portfolio-details {
+    position: absolute;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 60%;
+}
+
+.portfolio-container:hover img {
+    -moz-transforms: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
